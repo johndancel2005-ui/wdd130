@@ -1,10 +1,14 @@
 main {
-    max-width: 8440x;
+    max-width: 840px;
+}
+
+nav {
+    background-color: steelblue;
+    padding: 10px;
 }
 
 nav a {
     color: rgb(255, 255, 255);
-    background-color: steelblue;
     padding: 10px;
     display: block;
 }
@@ -40,14 +44,8 @@ aside img {
     height: auto;
 }
 
-main img {
-    width: 150px;
-    height: auto;
-}
-
 footer {
     margin-top: 1rem;
-    background-color: steelblue;
-    border-top: 1px solid rgb(0, 0, 0, 0. 2);
+    border-top: 1px solid rgb(0 0 0 / 0.2);
     text-align: center;
 }
