@@ -1,0 +1,149 @@
+:root {
+    --primary-color: #0b5d6b;
+    /* deep river teal */
+    --secondary-color: #e8f1f2;
+    /* foam */
+    --accent1-color: #12313a;
+    /* dark slate, body text */
+    --accent2-color: #f28c28;
+    /* life-jacket orange */
+    --heading-font: "Bitter", Georgia, serif;
+    --body-font: "Source Sans 3", Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: var(--secondary-color);
+    line-height: 1.5;
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+}
+
+header nav ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+header nav a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+header nav a:hover,
+header nav a:focus {
+    color: var(--accent2-color);
+    text-decoration: underline;
+}
+
+/* Hero with overlays */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-left: 6px solid var(--accent2-color);
+    border-radius: 0 8px 0 0;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin: 0 0 8px 16px;
+    border: 3px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+.hero article p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sections */
+section h2 {
+    margin-bottom: 8px;
+    border-bottom: 3px solid var(--accent2-color);
+    display: inline-block;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    border-top: 2px solid var(--primary-color);
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+}
