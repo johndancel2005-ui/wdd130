@@ -1,8 +1,9 @@
 :root {
-    --primary-color: #0b5d6b;
     /* deep river teal */
-    --secondary-color: #e8f1f2;
+    --primary-color: #0b5d6b;
     /* foam */
+    --secondary-color: #e8f1f2;
+
     --accent1-color: #12313a;
     /* dark slate, body text */
     --accent2-color: #f28c28;
@@ -47,30 +48,31 @@ article {
 
 /* Header */
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 200px auto;
     align-items: center;
-    justify-content: space-between;
 }
 
 .logo {
     height: 80px;
     width: auto;
+    padding: 10px 0 0 0;
 }
 
-header nav ul {
+nav ul {
     display: flex;
     gap: 24px;
     list-style: none;
 }
 
-header nav a {
+nav a {
     color: var(--primary-color);
     font-weight: 600;
     text-decoration: none;
 }
 
-header nav a:hover,
-header nav a:focus {
+nav a:hover,
+nav a:focus {
     color: var(--accent2-color);
     text-decoration: underline;
 }
