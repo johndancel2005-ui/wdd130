@@ -155,7 +155,7 @@ section h2 {
 
 .gallery figure {
     flex: 1;
-    mid: width 0;
+    min-width: 0;
 }
 
 .gallery img {
