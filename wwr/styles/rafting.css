@@ -99,12 +99,6 @@ nav a:focus {
     height: auto;
 }
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
 h1 {
     position: absolute;
     top: 20px;
@@ -149,6 +143,8 @@ section h2 {
 .history h2 {
     display: table;
     margin: 0 auto 12px;
+    grid-column: 1 / -1;
+    justify-self: center;
 }
 
 .history p {
@@ -162,11 +158,6 @@ section h2 {
     grid-template-rows: auto auto 1fr auto;
     gap: 16px;
     align-items: start;
-}
-
-.history h2 {
-    grid-column: 1 / -1;
-    justify-self: center;
 }
 
 .history .intro {
