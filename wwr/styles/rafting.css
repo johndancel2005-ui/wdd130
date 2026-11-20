@@ -50,7 +50,7 @@ article {
 }
 
 section p+p {
-    margin-top: 8px
+    margin-top: 8px;
 }
 
 /* Header */
@@ -99,6 +99,12 @@ nav a:focus {
     height: auto;
 }
 
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 h1 {
     position: absolute;
     top: 20px;
@@ -108,7 +114,6 @@ h1 {
     opacity: 0.7;
     background-color: var(--title-overlay);
     color: #fff8f8;
-    ;
 }
 
 .hero article {
@@ -142,18 +147,53 @@ section h2 {
 }
 
 .history h2 {
+    display: table;
+    margin: 0 auto 12px;
+}
+
+.history p {
+    margin: 0 0 16px;
+    padding: 0;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 16px;
+    align-items: start;
+}
+
+.history h2 {
     grid-column: 1 / -1;
-    justify-content: flex-start;
+    justify-self: center;
+}
+
+.history .intro {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.history .founders {
+    grid-column: 1;
+    grid-row: 3;
 }
 
 .history img {
+    grid-column: 2;
+    grid-row: 2 / 4;
+    float: right;
+    justify-self: end;
+    align-self: start;
     width: 100%;
     height: auto;
+    margin: 0 0 8px 24px;
     border-radius: 8px;
 }
 
-.history p:last-of-type {
+.history .gte {
     grid-column: 1 / -1;
+    grid-row: 4;
 }
 
 .gallery {
