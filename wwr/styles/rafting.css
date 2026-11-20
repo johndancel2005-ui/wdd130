@@ -8,6 +8,7 @@
     /* dark slate, body text */
     --accent2-color: #f28c28;
     /* life-jacket orange */
+    --title-overlay: #030303;
     --heading-font: "Bitter", Georgia, serif;
     --body-font: "Source Sans 3", Arial, sans-serif;
 }
@@ -46,7 +47,7 @@ article {
     padding: 8px;
 }
 
-section p=p {
+section p+p {
     margin-top: 8px
 }
 
@@ -104,7 +105,8 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--title-overlay);
-    color: white;
+    color: #fff8f8;
+    ;
 }
 
 .hero article {
@@ -112,7 +114,7 @@ h1 {
     bottom: 0;
     left: 0;
     width: 60%;
-    background-color: rgba(206, 206, 206, 0.85);
+    background-color: #cececed9;
     border-left: 6px solid var(--accent2-color);
     border-radius: 0 8px 0 0;
 }
