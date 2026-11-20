@@ -1,7 +1,10 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 1;
+    display: flex;
     box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
 }
 
 main {
