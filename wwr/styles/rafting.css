@@ -51,6 +51,7 @@ header {
     display: grid;
     grid-template-columns: 200px auto;
     align-items: center;
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .logo {
@@ -74,8 +75,10 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-    color: var(--accent2-color);
+    color: var(--accent1-color);
     text-decoration: underline;
+    text-decoration-color: var(--accent2-color);
+    text-decoration-thickness: 3px;
 }
 
 /* Hero with overlays */
@@ -130,7 +133,47 @@ section h2 {
     display: inline-block;
 }
 
-/* Footer */
+.history h2 {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+}
+
+.history img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.history p:last-of-type {
+    grid-column: 1 / -1;
+}
+
+.gallery {
+    display: flex;
+    gap: 16px;
+}
+
+.gallery figure {
+    flex: 1;
+    mid: width 0;
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery figcaption {
+    margin-top: 6px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
 footer {
     text-align: center;
     border-top: 2px solid var(--primary-color);
