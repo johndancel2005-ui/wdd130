@@ -11,6 +11,12 @@
     --title-overlay: #030303;
     --heading-font: "Bitter", Georgia, serif;
     --body-font: "Source Sans 3", Arial, sans-serif;
+
+    /* former body rule */
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: var(--secondary-color);
+    line-height: 1.5;
 }
 
 *,
@@ -19,13 +25,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-    background-color: var(--secondary-color);
-    line-height: 1.5;
 }
 
 header,
@@ -47,10 +46,6 @@ section,
 article {
     margin: 16px;
     padding: 8px;
-}
-
-section p+p {
-    margin-top: 8px;
 }
 
 /* Header */
@@ -160,11 +155,8 @@ section h2 {
     align-items: start;
 }
 
-.history .intro {
-    grid-column: 1;
-    grid-row: 2;
-}
-
+/* rows 2 and 3 come from HTML order (intro first, founders second) */
+.history .intro,
 .history .founders {
     grid-column: 1;
 }
@@ -186,9 +178,12 @@ section h2 {
     grid-row: 4;
 }
 
-.gallery {
+/* shared flex row for gallery and social icons */
+.gallery,
+.socialmedia {
     display: flex;
     gap: 16px;
+    justify-content: center;
 }
 
 .gallery figure {
@@ -217,16 +212,6 @@ section h2 {
 footer {
     text-align: center;
     border-top: 2px solid var(--primary-color);
-}
-
-.socialmedia {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-}
-
-.socialmedia a {
-    text-decoration: none;
 }
 
 .socialmedia img {
