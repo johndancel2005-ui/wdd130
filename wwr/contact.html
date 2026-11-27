@@ -36,9 +36,8 @@
                 <p>Email: gte@internationalrafting.com</p>
             </address>
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d178214.07982757784!2d7.3478956!3d45.7392164!3m2!1i1024!2i768!4f13.
-                    1!3m3!1m2!1s0x4788deafc674a467%3A0x23df6add5b3f46c3!2sF.I.Raft%20-%20Federazione%20Italiana%20Rafting!5e0!3m2!1sen!2sph!4v1795779362034!5m2!1sen!2sph"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d178214.07982757784!2d7.3478956!3d45.7392164!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4788deafc674a467%3A0x23df6add5b3f46c3!2sF.I.Raft%20-%20Federazione%20Italiana%20Rafting!5e0!3m2!1sen!2sph!4v1795779362034!5m2!1sen!2sph"
+                width="400" height="300" allowfullscreen="" loading="lazy"
                 referrerpolicy="strict-origin-when-cross-origin" title="Map showing our location"></iframe>
         </section>
 
@@ -53,15 +52,18 @@
 
                 <fieldset>
                     <legend>Purpose of your message</legend>
-                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                    <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+                    <label><input type="radio" id="general" name="purpose" value="general" required> General
+                        Inquiry</label>
+                    <label><input type="radio" id="reservation" name="purpose" value="reservation"> Reservation
+                        Question</label>
+                    <label><input type="radio" id="website" name="purpose" value="website"> Website Suggestion</label>
                 </fieldset>
 
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
-                <label><input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter</label>
+                <label><input type="checkbox" id="newsletter" name="newsletter"> Please subscribe me to the monthly
+                    newsletter</label>
 
                 <button type="submit">Send Message</button>
             </form>
@@ -79,7 +81,7 @@
                     <figcaption>Members Profile</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/ir federation_20kb.jpg" alt="Portrait of Members 3">
+                    <img src="images/irfederation_20kb.jpg" alt="Portrait of Members 3">
                     <figcaption>Members Profile</figcaption>
                 </figure>
             </div>
