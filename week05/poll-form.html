@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="HTML form exercise: a short poll with contact information and questions.">
-  <link rel="stylesheet" href="poll-form.css">
+  <link rel="stylesheet" href="styles/poll-form.css">
   <title>WDD 130 | HTML Form - User Poll</title>
 </head>
 
@@ -18,11 +18,11 @@
     <form>
       <fieldset>
         <legend>Contact Information</legend>
-        <div>
+        <div class="form-item label-narrow">
           <label for="fullname">Full Name:</label>
           <input type="text" id="fullname" name="fullname" required>
         </div>
-        <div>
+        <div class="form-item label-narrow">
           <label for="useremail">Email:</label>
           <input type="email" id="useremail" name="useremail" required>
         </div>
@@ -30,7 +30,7 @@
 
       <fieldset>
         <legend>Questions</legend>
-        <div>
+        <div class="form-item label-wide">
           <label for="browser">What is your favorite internet browser?</label>
           <select id="browser" name="browser">
             <option value="chrome">Chrome</option>
@@ -41,11 +41,11 @@
             <option value="other">Other</option>
           </select>
         </div>
-        <div>
+        <div class="form-item label-wide">
           <label for="pet">Do you have a household pet?</label>
           <input type="checkbox" id="pet" name="pet">
         </div>
-        <div>
+        <div class="form-item">
           <label for="places">List the places you have lived:</label>
           <textarea id="places" name="places" rows="3" cols="23"
             placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu Mali"></textarea>

@@ -132,7 +132,6 @@ footer p {
     margin: 8px;
 }
 
-/* Small screens: stack labels above fields */
 @media (max-width: 600px) {
     form {
         margin: 0 10px 18px;
@@ -149,7 +148,6 @@ footer p {
     }
 }
 
-/* Extra room around the checkbox row */
 fieldset div:has([type="checkbox"]) {
     min-height: 44px;
 }
